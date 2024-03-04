@@ -94,6 +94,7 @@ nav img {
     font-family: 'Inconsolata', monospace;
     color: rgba(229, 229, 229, 0.798);
     font-size: 62px;
+    letter-spacing: 3px;
 }
 
 .text-box p {
@@ -161,6 +162,7 @@ nav img {
 h1 {
     font-size: 36px;
     font-weight: 600;
+    letter-spacing: 3px;
 }
 
 p {
