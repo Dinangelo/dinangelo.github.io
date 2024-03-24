@@ -272,7 +272,7 @@ h3 {
 }
 
 /** formations */
-.facilities {
+.formations {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -352,25 +352,6 @@ ul.tl li .timestamp {
     text-align: right;
     font-size: 12px;
 }
-
-/* .facilities-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-.facilities-col img{
-    width: 100%;
-    border-radius: 10px;
-}
-.facilities-col p{
-    padding: 0;
-}
-.facilities-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
-} */
 
 /*testimonials*/
 
