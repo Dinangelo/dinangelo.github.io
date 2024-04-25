@@ -442,6 +442,24 @@ h2 {
     line-height: 1.6;
 }
 
+.projects__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+}
+
+.projects__row-img-cont img{
+    overflow: hidden;
+}
+
+.projects__row-img {
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
 /* call to action */
 .cta {
     margin: 100px auto;
