@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Dinangelo</title>
-    <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
@@ -43,9 +43,9 @@
                     <div>
                         <h1>A propos de moi</h1>
                     </div>
-                    <p>Apres mes etudes dans l'informatique, l'electronique et la telecommunication, j'ai mis mes savoir faire au service de client particulier en faisant des maintenances hardware et software. </p>
-                    <p>Recemment j'ai decidé de me reorienter vers la programmation et plus particulierement le developpement d'application desktop et web, c'est une passion qui ne m'avais jamais quitté.</p>
-                    <p>Ce site a été fait pour resumer mes compétences</p>
+                    <p>Après mes études dans l'informatique, l'électronique et la télécommunication, j'ai mis mes savoir-faire au service de client particulier en faisant des maintenances hardware et software. </p>
+                    <p>Récemment j'ai décidé de me réorienter vers la programmation et plus particulièrement le développement d'application desktop et web, c'est une passion qui ne m'avais jamais quitté.</p>
+                    <!-- <p>Ce site a été fait pour resumer mes compétences</p> -->
                 </div> 
         </div>   
     </section>
@@ -122,6 +122,7 @@
                             DIPLÔME DE LICENCE PROFESSIONNELLE EN INFORMATIQUE
                         </div>
                         <div class="item-detail">
+                            
                             Creation d’une application de Gestion des petites et moyennes entreprises Client\Serveur sous Visual Basic 6
                         </div>
                     </li>
@@ -175,7 +176,7 @@
                 </div>
                 <div class="projects__row">
                     <div class="projects__row-img-cont">
-                    <img src="assets/img/Fda.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+                    <img src="assets/img/fdaMenu.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
                     </div>
                     <div class="projects__row-content">
                     <h3 class="projects__row-content-title">I-tetikasa</h3>
@@ -191,17 +192,30 @@
 
 <!-------- Call to Action ------>
     <section class="cta" id="contact">
-        <div class="ctn">
-            <p>Vous souhaitez me contacter ? Vous pouvez m'envoyer un mail à l'adresse <a href="mailto:dravalijaona@gmail.com">dravalijaona@gmail.com</a> et je réponderai dans les plus brefs délais.</p>
-        </div>
+        <div class="container">
+            <form action="mailto:dravalijaona@gmail.com" method="post" enctype="text/plain">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom" required>
+        
+              <label for="email">Mail adress</label>
+              <input type="email" id="email" name="email" placeholder="Votre mail" required>
+
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Um message" style="height:200px" required></textarea>
+          
+              <input type="submit" value="Envoyer">
+          
+            </form>
+          </div>
     </section>
 
     <!---- footer -->
     <section class="footer">
         <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+            <a href="http://www.facebook.com"><i class="fa-brands fa-facebook fa-2xl"></i></a> 
+            <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="http://www.github.com"><i class="fa-brands fa-github fa-2xl"></i></a>
         </div>
         <p> &copy Copyright <?php echo date('Y'); ?> by Dinangelo Ravalijaona</p>
     </section>
