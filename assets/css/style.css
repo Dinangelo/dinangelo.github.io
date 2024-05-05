@@ -502,6 +502,7 @@ input[type=text], select, textarea {
     padding: 18px 0;
 }
 
-.fa-heart-o {
-    color: #f44336;
+a{
+    color: #000000;
+    text-decoration: none;
 }

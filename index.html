@@ -14,6 +14,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "3JJeI2QTCMVKhZtKn",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_we2uskq', 'contact_form', this)
+                    .then(() => {
+                        alert('SUCCESS!');
+                    }, (error) => {
+                        alert('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <section class="header">
@@ -31,7 +54,7 @@
         <div class="text-box">
             <h1> Dinangelo Ravalijaona </h1>
             <p>DEVELOPPEUR WEB</p>
-            <a href="/about" class="hero-btn">Hire me</a>
+            <a href="#contact" class="hero-btn">Hire me</a>
         </div>
     </section>
     <section class="Apropos" id="Apropos">
@@ -181,7 +204,7 @@
                     <div class="projects__row-content">
                     <h3 class="projects__row-content-title">I-tetikasa</h3>
                     <p class="projects__row-content-desc">
-                        I-tetikasa est une application web de suivi evaluation créee sur mesure pour la société FDA (Fond de développement Agricole).
+                        I-tetikasa est une application web de suivi evaluation créée sur mesure pour la société FDA (Fond de développement Agricole).
                     </p>
                     </div>
                 </div>
@@ -193,18 +216,18 @@
 <!-------- Call to Action ------>
     <section class="cta" id="contact">
         <div class="container">
-            <form action="mailto:dravalijaona@gmail.com" method="post" enctype="text/plain">
+            <form id="contact-form" enctype="text/plain">
           
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Votre nom" required>
+              <input type="text" id="fname" name="fname" placeholder="Votre nom" required>
         
               <label for="email">Mail adress</label>
               <input type="email" id="email" name="email" placeholder="Votre mail" required>
 
               <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Um message" style="height:200px" required></textarea>
+              <textarea id="subject" name="subject" placeholder="Un message" style="height:200px" required></textarea>
           
-              <input type="submit" value="Envoyer">
+              <input type="submit" value="submit">
           
             </form>
           </div>
@@ -213,9 +236,9 @@
     <!---- footer -->
     <section class="footer">
         <div class="icons">
-            <a href="http://www.facebook.com"><i class="fa-brands fa-facebook fa-2xl"></i></a> 
-            <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-            <a href="http://www.github.com"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="https://www.facebook.com/dinangelo.ravalijaona"><i class="fa-brands fa-facebook fa-2xl"></i></a> 
+            <a href="https://www.linkedin.com/in/dina-ravalijaona-38863a194/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/Dinangelo"><i class="fa-brands fa-github fa-2xl"></i></a>
         </div>
         <p> &copy Copyright <?php echo date('Y'); ?> by Dinangelo Ravalijaona</p>
     </section>
