@@ -3,9 +3,14 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Source sans Pro',sans-serif;
+}
+
 html {
     font-size: 62.5%;
     background: #fafafa;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -91,7 +96,7 @@ nav img {
 }
 
 .text-box h1 {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Helvetica', monospace;
     color: rgba(229, 229, 229, 0.798);
     font-size: 62px;
     letter-spacing: 3px;
@@ -103,9 +108,9 @@ nav img {
     color: #fff;
 }
 
-.me p {
+/* .me p {
     font-size: 20px;
-}
+} */
 
 .hero-btn {
     display: inline-block;
@@ -136,7 +141,8 @@ nav img {
 
     .nav-links {
         position: absolute;
-        background: #f44336;
+        background: #818181;
+        opacity: 0.6;
         height: 100vh;
         width: 200px;
         top: 0%;
@@ -166,9 +172,9 @@ h1 {
     letter-spacing: 3px;
 }
 
-p {
-    color: #777;
-    font-size: 14px;
+.para_content {
+    font-size: 1.8rem;
+    color: #666;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
