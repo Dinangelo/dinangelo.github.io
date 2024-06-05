@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Dinangelo</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -41,13 +40,17 @@
 <body>
     <section class="header">
         <nav>
+            <div class="logo-me">
+                <span class="name-me">Dinangelo.R</span>
+            </div>
+            
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">ACCEUIL</a></li>
-                    <li><a href="#Apropos">A PROPOS</a></li>
-                    <li><a href="#Skills">COMPETENCES</a></li>
-                    <li><a href="#formations">FORMATIONS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#Apropos" class="link">A propos</a></li>
+                    <li><a href="#Skills" class="link">Competences</a></li>
+                    <li><a href="#formations" class="link">Formation</a></li>
+                    <li><a href="#Projects" class="link">Projets</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,7 +60,7 @@
             <a href="#contact" class="hero-btn">Hire me</a>
         </div>
     </section>
-    <section class="Apropos" id="Apropos">
+    <section class="Apropos espace" id="Apropos">
         <div class="row">
                 <div class="me">
                     <img src="assets/img/image.png" alt="">
@@ -68,12 +71,16 @@
                     </div>
                     <p class="para_content">Après mes études dans l'informatique, l'électronique et la télécommunication, j'ai mis mes savoir-faire au service de client particulier en faisant des maintenances hardware et software. </p>
                     <p class="para_content">Récemment j'ai décidé de me réorienter vers la programmation et plus particulièrement le développement d'application Desktop et Web </p>
-                    <!-- <p>Ce site a été fait pour resumer mes compétences</p> -->
+                    <p class="para_content">Je suis déterminé à me consacrer à la création d’applications après avoir travaillé
+                        dans l'informatique sans me concentrer sur ce domaine. Cette expérience m'a
+                        enrichi de nouvelles compétences techniques. Ma motivation est alimentée par un
+                        désir constant d'apprendre et de m'améliorer, ainsi que par l'envie de contribuer à
+                        des projets significatifs.</p>
                 </div> 
         </div>   
     </section>
 
-    <!------ campus ---->
+    <!------ Skills ---->
     <section class="Skills" id="Skills">
         <div class="container-skills">
             <h1  class="compet-title">COMPETENCES</h1>     
@@ -145,7 +152,6 @@
                             DIPLÔME DE LICENCE PROFESSIONNELLE EN INFORMATIQUE
                         </div>
                         <div class="item-detail">
-                            
                             Creation d’une application de Gestion des petites et moyennes entreprises Client\Serveur sous Visual Basic 6
                         </div>
                     </li>
@@ -213,7 +219,7 @@
     </section>
 
 
-<!-------- Call to Action ------>
+<!-------- Contact ------>
     <section class="cta" id="contact">
         <div class="container">
             <form id="contact-form" enctype="text/plain">
