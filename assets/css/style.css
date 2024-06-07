@@ -91,20 +91,6 @@ nav {
     text-align: center;
 }
 
-.image-centre {
-    width: 40%;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.image-centre img {
-    max-width: 50%;
-    height: 10%;
-}
-
 .text-box h1 {
     font-family: 'Helvetica', monospace;
     color: rgba(229, 229, 229, 0.798);
@@ -166,6 +152,9 @@ nav {
     padding-top: 5%;
 }
 
+.me{
+    margin: 5%;
+}
 .me img {
     max-width: 50%;
     height: 100%;
@@ -189,6 +178,7 @@ h1 {
 .image-col img {
     max-width: 100%;
     height: auto;
+    border-radius: 1.5rem;
 }
 
 .row {
@@ -199,6 +189,8 @@ h1 {
 
 .row-skills {
     display: grid;
+    margin: auto;
+    margin: 3%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
 }
@@ -271,10 +263,11 @@ h3 {
 
 /** formations */
 .formations {
+    background: #f3f3f3;
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 5%;
 }
 
 .history-tl-container {
