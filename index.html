@@ -7,35 +7,13 @@
     <title>Portfolio-Dinangelo</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.   gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "3JJeI2QTCMVKhZtKn",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_we2uskq', 'contact_form', this)
-                    .then(() => {
-                        alert('SUCCESS!');
-                    }, (error) => {
-                        alert('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
     <section class="header">
@@ -53,6 +31,7 @@
                     <li><a href="#contact" class="link">Contact</a></li>
                 </ul>
             </div>
+            <img src="assets/img/icons8-menu-52.svg" alt="menu-btn" class="menu-humburger">
         </nav>
         <div class="text-box">
             <h1> Dinangelo Ravalijaona </h1>
@@ -142,7 +121,7 @@
 
     <!----- Formation --->
     <section class="formations" id="formations">
-        <h1>FORMATIONS</h1>
+        <h1 class="formation-title">FORMATIONS</h1>
             <div class="history-tl-container">
                 <ul class="tl">
                     <li class="tl-item" ng-repeat="item in retailer_history">
@@ -223,7 +202,7 @@
 <!-------- Contact ------>
     <section class="cta" id="contact">
         <div class="container">
-            <form id="contact-form" enctype="text/plain">
+            <form id="contact-form" role="form" name="contact-form" enctype="text/plain">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="fname" placeholder="Votre nom" required>
@@ -249,6 +228,6 @@
         </div>
         <p> &copy Copyright <script>document.write(new Date().getFullYear())</script> by Dinangelo Ravalijaona</p>
     </section>
-
+    <script src="assets/js/mail.js"></script>
  </body>
 </html>

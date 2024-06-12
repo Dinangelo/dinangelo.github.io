@@ -75,6 +75,11 @@ nav {
     width: 100%;
 }
 
+nav .menu-humburger {
+    display: none;
+    width: 30px;
+}
+
 .link {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -124,20 +129,39 @@ nav {
 
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 50px;
     }
-
-    .nav-links ul li {
+    nav .menu-humburger {
         display: block;
     }
 
+    .nav-links ul li:hover {
+        display: block;
+        margin: 5px;
+        background-color: #258CC7;
+        border-radius: .5rem;
+    }
+    
+    .nav-links ul {
+        margin: 3%;
+        padding: 1rem;
+        border-radius: .7rem;
+        border: 1px solid #e3e0e0;
+        background-color: rgb(0 0 0 / 24%);
+
+    }
+    .nav-links ul li {
+        display: block;
+        margin: 5px;
+        background-color: #258CC7;
+        border-radius: .5rem;
+    }
+
     .nav-links {
+        display: none;
         position: absolute;
-        background: #818181;
-        opacity: 0.6;
-        height: 100vh;
-        width: 200px;
-        top: 0%;
+        width: 100%;
+        top: 100%;
         right: 0;
         text-align: left;
         z-index: 2;
@@ -158,6 +182,7 @@ nav {
 .me img {
     max-width: 50%;
     height: 100%;
+    object-fit: contain;
 }
 
 h1 {
@@ -182,7 +207,6 @@ h1 {
 }
 
 .row {
-    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -222,7 +246,7 @@ h3 {
     text-align: center;
 }
 
-.compet-title{
+.compet-title, .formation-title{
     margin-bottom: 3.5rem;
     margin-top: 3.5rem;
 }
@@ -259,6 +283,12 @@ h3 {
 .layer:hover h3 {
     bottom: 49%;
     opacity: 1;
+}
+
+@media(max-width :700px) {
+    .row-skills {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /** formations */
