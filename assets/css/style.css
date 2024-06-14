@@ -135,11 +135,18 @@ nav .menu-humburger {
         display: block;
     }
 
-    .nav-links ul li:hover {
+    .nav-links ul li::after {
+        content: normal;
+        width: 0%;
+        height: 2px;
         display: block;
         margin: 5px;
-        background-color: #258CC7;
         border-radius: .5rem;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover {
+        background: #515151;
     }
     
     .nav-links ul {
@@ -151,9 +158,11 @@ nav .menu-humburger {
 
     }
     .nav-links ul li {
+        list-style: none;
         display: block;
         margin: 5px;
-        background-color: #258CC7;
+        padding: 8px 12px;
+        position: relative;
         border-radius: .5rem;
     }
 
@@ -166,6 +175,18 @@ nav .menu-humburger {
         text-align: left;
         z-index: 2;
     }
+
+    .menu-respons {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        display: block;
+    }
+
 }
 
 /** Apropos */
@@ -303,7 +324,8 @@ h3 {
 .history-tl-container {
     margin-top: 5%;
     display: flex;
-    width: 100%;
+    margin: auto;
+    width: 92%;
     display: block;
     position: relative;
 }
@@ -347,6 +369,7 @@ h3 {
 }
 
 ul.tl li .item-title {
+    font-size: large;
     text-align: left;
     background-color: rgba(100, 100, 100, 0.1);
     border-top-left-radius: 5px;
@@ -356,8 +379,8 @@ ul.tl li .item-title {
 
 ul.tl li .item-detail {
     text-align: left;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
     background-color: #258CC7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
