@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dd95447648.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -26,7 +29,7 @@
                 <ul>
                     <li><a href="#Apropos" class="link">A propos</a></li>
                     <li><a href="#Skills" class="link">Competences</a></li>
-                    <li><a href="#formations" class="link">Formation</a></li>
+                    <li><a href="#formations" class="link">Formations</a></li>
                     <li><a href="#Projects" class="link">Projets</a></li>
                     <li><a href="#contact" class="link">Contact</a></li>
                 </ul>
@@ -34,9 +37,23 @@
             <img src="assets/img/icons8-menu-52.svg" alt="menu-btn" class="menu-humburger">
         </nav>
         <div class="text-box">
-            <h1> Dinangelo Ravalijaona </h1>
-            <p>DEVELOPPEUR WEB</p>
-            <a href="#contact" class="hero-btn">Hire me</a>
+            <div>
+                <h1>Dinangelo Ravalijaona</h1>
+                <p>Je suis un developpeur web spécialisé dans le backend</p>
+                <!-- <a href="#contact" class="hero-btn">Hire me</a> -->
+                <a href="assets/CV_Dinangelo.pdf" class="hero-btn" download="Dinangelo_CV">Telecharger CV</a>
+            </div>
+            <div class="contain">
+                <div class="square"><img src="assets/img/icons8-codeigniter.png" alt="image"></div>
+                <div class="square"><img src="assets/img/icons8-jquery.svg" alt="image"></div>
+                <div class="square"><img src="assets/img/php-logo.png" alt="image"></div>
+                <div class="square"><img src="assets/img/Git-Logo.png" alt="image"></div>
+                <div class="square"><img src="assets/img/icons8-html5.svg" alt="image"></div>
+                <div class="square"><img src="assets/img/icons8-mysql.svg" alt="image"></div>
+                <div class="square"><img src="assets/img/Windev.svg" alt="image"></div>
+                <div class="square"><img src="assets/img/icons8-css.svg" alt="image"></div>
+                <div class="square"><img src="assets/img/icons8-wordpress.svg" alt="image"></div>
+            </div>
         </div>
     </section>
     <section class="Apropos espace" id="Apropos">
@@ -46,9 +63,7 @@
                     <img src="assets/img/image.png" alt="">
                 </div>
                 <div class="me">
-                    <div>
-                        <h1>A propos de moi</h1>
-                    </div>
+                    <h1>A propos de moi</h1>
                     <p class="para_content">Après mes études dans l'informatique, l'électronique et la télécommunication, j'ai mis mes savoir-faire au service de client particulier en faisant des maintenances hardware et software. </p>
                     <p class="para_content">Récemment j'ai décidé de me réorienter vers la programmation et plus particulièrement le développement d'application Desktop et Web </p>
                     <p class="para_content">Je suis déterminé à me consacrer à la création d’applications après avoir travaillé
@@ -61,10 +76,53 @@
         </div>
     </section>
 
+    
+    <!----- Formation --->
+    <section class="formation" id="formations">
+        <div class="formation_container">
+            <h1 class="formation_title">Mes formations</h1>
+            <div class="formation_container_rows">
+                <div class="container_row">
+                    <img src="assets/img/lpn.png" alt="">
+                    <div class="timeline">
+                        <span class="timeline_date">
+                            2009
+                        </span>
+                        <span class="timeline_diplome">
+                            DIPLÔME BACCALAUREAT
+                        </span>
+                    </div>
+                </div>
+                <div class="container_row">
+                    <img src="assets/img/iesi.png" alt="">
+                    <div class="timeline">
+                        <span class="timeline_date">
+                            2011 - 2012
+                        </span>
+                        <span class="timeline_diplome">
+                            DIPLÔME DE TECHNICIEN SUPERIEUR EN AUDIO VISUEL
+                        </span>
+                    </div>
+                </div>
+                <div class="container_row">
+                    <img src="assets/img/iesi.png" alt="">
+                    <div class="timeline">
+                        <span class="timeline_date">
+                            2012 - 2013
+                        </span>
+                        <span class="timeline_diplome">
+                            DIPLÔME DE LICENCE PROFESSIONNELLE EN INFORMATIQUE
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!------ Skills ---->
     <section class="Skills" id="Skills">
         <div class="container-skills">
-            <h1  class="compet-title">COMPETENCES</h1>     
+            <h1  class="compet_title">Mes compétences</h1>     
             <div class="row-skills">
                 <div>
                     <div class="row-col-img image-col">
@@ -75,42 +133,47 @@
                 <div>
                     <div class="row-col">
                         <div class="skills-col">
+                            <img src="assets/img/icons8-html5.svg" alt="" srcset="">
                             HTML
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/icons8-css.svg" alt="" srcset="">
                             CSS
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/icons8-javascript.svg" alt="" srcset="">
                             Javascript
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/new-php-logo.svg" alt="" srcset="">
                             PHP
-                        </div>
+                        </div>  
                         <div class="skills-col">
+                            <img src="assets/img/icons8-mysql.svg" alt="" srcset="">
                             MySQL
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/icons8-git.svg" alt="" srcset="">
                             GIT
                         </div>
                         <div class="skills-col">
-                            SQL
-                        </div>
-                        <div class="skills-col">
+                            <img src="assets/img/icons8-symfony.svg" alt="" srcset="">
                             SYMFONY
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/icons8-codeigniter.png" alt="" srcset="">
                             CODEIGNITER
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/icons8-jquery.svg" alt="" srcset="">
                             JQUERY
                         </div>
                         <div class="skills-col">
-                            AJAX
-                        </div>
-                        <div class="skills-col">
+                            <img src="assets/img/icons8-wordpress.svg" alt="" srcset="">
                             WORDPRESS
                         </div>
                         <div class="skills-col">
+                            <img src="assets/img/Windev.svg" alt="" srcset="">
                             WINDEV
                         </div>
                     </div>
@@ -119,83 +182,60 @@
         </div> 
     </section>
 
-    <!----- Formation --->
-    <section class="formations" id="formations">
-        <h1 class="formation-title">FORMATIONS</h1>
-            <div class="history-tl-container">
-                <ul class="tl">
-                    <li class="tl-item" ng-repeat="item in retailer_history">
-                        <div class="timestamp">
-                            2012 - 2013 <br> IS-IESI ANJANAHARY
-                        </div>
-                        <div class="item-title">
-                            DIPLÔME DE LICENCE PROFESSIONNELLE EN INFORMATIQUE
-                        </div>
-                        <div class="item-detail">
-                            Creation d’une application de Gestion des petites et moyennes entreprises Client\Serveur sous Visual Basic 6
-                        </div>
-                    </li>
-                    <li class="tl-item" ng-repeat="item in retailer_history">
-                        <div class="timestamp">
-                            2011 - 2012 <br> IS-IESI Anjanahary
-                        </div>
-                        <div class="item-title">
-                            DIPLÔME DE TECHNICIEN SUPERIEUR EN AUDIO VISUEL
-                        </div>
-                        <div class="item-detail">
-                            Synthèse de l’audio-visuel : téléviseur, Caméscope, magnétoscope
-                        </div>
-                    </li>
-                    <li class="tl-item" ng-repeat="item in retailer_history">
-                        <div class="timestamp">
-                            2009 <br> Lycée privée Nomentsoa
-                        </div>
-                        <div class="item-title">
-                            DIPLÔME BACCALAUREAT 
-                        </div>
-                        <div class="item-detail">
-                            Serie A2
-                        </div>
-                    </li>
-                </ul>
-        </div>
-    </section>
-
-    <!-------- Projets ------>
+    <!-------- Projets ------>  
     <section class="Projects" id="Projects">
-        <div class="main-container">
-            <h2 class="heading heading-sec heading-sec__mb-bg">
-              <span class="heading-sec__main">Projets</span>
-              <span class="heading-sec__sub">
-                Ici vous trouverez mes projets personnels et aussi des projets que j'ai fait pour une entreprise ou un client particulier.
-              </span>
-            </h2>
-      
             <div class="projects__content">
-                <div class="projects__row">
-                    <div class="projects__row-img-cont">
-                    <img src="assets/img/report.JPG" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+                <h1 class="project_title">Projets</h1>
+                <p class="project_title_desc">
+                    Ici vous trouverez mes projets personnels et aussi des projets que j'ai fait pour une entreprise ou un client particulier.
+                </p>
+                <div class="projects_content_row">
+                    <div class="projects__row">
+                        <div class="projects__row_img_cont">
+                            <img src="assets/img/Portfolio.png" alt="Software Screenshot" class="projects__row_img" loading="lazy">
+                        </div>
+                        <div class="projects__row_content">
+                            <h3 class="projects__row-content_title">Portfolio</h3>
+                            <p class="projects__row-content_desc">
+                                Une application web pour generer un rapport a partir des données sql server vers Excel.
+                            </p>
+                        </div>
+                        <div class="project_to_know">
+                            <a class="btn btn--med btn--theme dynamicBgClr" href="" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>  
+
+                    <div class="projects__row">
+                        <div class="projects__row_img_cont">
+                            <img src="assets/img/excel.jpg" alt="Software Screenshot" class="projects__row_img" loading="lazy">
+                        </div>
+                        <div class="projects__row_content">
+                            <h3 class="projects__row-content_title">Live report</h3>
+                            <p class="projects__row-content_desc">
+                                Une application web pour generer un rapport a partir des données sql server vers Excel.
+                            </p>
+                        </div>
+                        <div class="project_to_know">
+                            <a class="btn btn--med btn--theme dynamicBgClr" href="" target="_blank">En savoir plus</a>
+                        </div>
                     </div>
-                    <div class="projects__row-content">
-                    <h3 class="projects__row-content-title">Live report</h3>
-                    <p class="projects__row-content-desc">
-                        Une application web pour generer un rapport a partir des données sql server vers Excel.
-                    </p>
-                    </div>
-                </div>
-                <div class="projects__row">
-                    <div class="projects__row-img-cont">
-                    <img src="assets/img/fdaMenu.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-                    </div>
-                    <div class="projects__row-content">
-                    <h3 class="projects__row-content-title">I-tetikasa</h3>
-                    <p class="projects__row-content-desc">
-                        I-tetikasa est une application web de suivi evaluation créée sur mesure pour la société FDA (Fond de développement Agricole).
-                    </p>
+
+                    <div class="projects__row">
+                        <div class="projects__row_img_cont">
+                            <img src="assets/img/fdaMenu.jpg" alt="Software Screenshot" class="projects__row_img" loading="lazy">
+                        </div>
+                        <div class="projects__row_content">
+                            <h3 class="projects__row-content_title">I-tetikasa</h3>
+                            <p class="projects__row-content_desc">
+                                I-tetikasa est une application web de suivi evaluation créée sur mesure pour la société FDA.
+                            </p>
+                        </div>
+                        <div class="project_to_know">
+                            <a class="btn--med" href="" target="_blank">En savoir plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
     </section>
 
 
@@ -204,10 +244,10 @@
         <div class="container">
             <form id="contact-form" role="form" name="contact-form" enctype="text/plain">
           
-              <label for="fname">First Name</label>
+              <label for="fname">Nom</label>
               <input type="text" id="fname" name="fname" placeholder="Votre nom" required>
         
-              <label for="email">Mail adress</label>
+              <label for="email">Mail</label>
               <input type="email" id="email" name="email" placeholder="Votre mail" required>
 
               <label for="subject">Message</label>
@@ -216,7 +256,7 @@
               <input type="submit" value="Envoyer">
           
             </form>
-          </div>
+        </div>
     </section>
 
     <!---- footer -->
