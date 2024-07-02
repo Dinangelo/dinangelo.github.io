@@ -16,6 +16,7 @@ html {
     min-height: 85vh;
     width: 100%;
     background-color: #59a4ce4f;
+    background-image: url("/assets/img/banner.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -24,7 +25,7 @@ html {
 
 nav {
     display: flex;
-    padding: 1% 6%;
+    padding: .5% 6%;
     justify-content: space-between;
     align-items: center;
     background: #59a4ce;
@@ -32,7 +33,7 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .name-me{
@@ -110,35 +111,6 @@ nav .menu-humburger {
     gap: 10px;
 }
 
-/* .contain ::before {
-    position: absolute;
-	top: 0;
-	left: -10%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.contain :hover::before {
-	-webkit-animation: shine 2s;
-	animation: shine 2s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 50%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 60%;
-	}
-} */
-
 .square {
     width: 100px;
     height: 100px;
@@ -164,9 +136,10 @@ nav .menu-humburger {
 }
 .text-box h1 {
     font-family: "Catamaran", sans-serif;
-    font-size: 5.5rem;
+    font-size: 4.3rem;
     font-weight: 900;
     color: #258CC7;
+    text-transform: uppercase;
 }
 
 .text-box p {
@@ -202,9 +175,6 @@ nav .menu-humburger {
 }
 
 @media(max-width: 700px) {
-    .text-box h1 {
-        font-size: 50px;
-    }
     nav .menu-humburger {
         display: block;
     }
@@ -264,9 +234,6 @@ nav .menu-humburger {
 }
 
 /** Apropos */
-.Apropos {
-    /* background: #fcfcfc; */
-}
 .espace {
     padding-top: 5%;
 }
@@ -284,14 +251,6 @@ nav .menu-humburger {
     height: 100%;
     object-fit: contain;
 }
-
-/* h1 {
-    font-family: "Catamaran", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #457B9D;
-    text-align: left;
-} */
 
 .para_content {
     font-family: 'JetBrains Mono', monospace;
@@ -602,6 +561,10 @@ h2 {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     transition: transform .3s;
 }
+.btn--med:hover {
+    border: 1px solid #258CC7;
+    transition: 1s;
+}
 
 .project_to_know{
     display: flex;
@@ -662,6 +625,18 @@ h2 {
     max-width: 100%;
     width: 5rem;
     height: 5rem;
+}
+
+.cont_col {
+    margin-inline-start: 2.5rem;
+}
+.cont_text {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: -.025em;
+    font-weight: 600;
+    text-align: left;
+    color: #666;
 }
 
 @media(max-width :700px) {
