@@ -16,7 +16,7 @@ html {
     min-height: 85vh;
     width: 100%;
     background-color: #59a4ce4f;
-    background-image: url("/assets/img/banner.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/banner.jpg"); */
     background-position: center;
     background-size: cover;
     position: relative;
@@ -137,16 +137,20 @@ nav .menu-humburger {
 .text-box h1 {
     font-family: "Catamaran", sans-serif;
     font-size: 4.3rem;
-    font-weight: 900;
     color: #258CC7;
-    text-transform: uppercase;
+    text-transform: uppercase;  
+}
+
+.police {
+    font-weight: 900 !important;
+    color: #18181898;
 }
 
 .text-box p {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono';
+    font-size: 1.3rem;
     padding: 3px;
     margin: 10px 0 20px;
-    font-size: 1.5rem;
     color: #1D3557;
 }
 
@@ -410,7 +414,8 @@ h3 {
 }
 
 .timeline_date {
-    font-size: 1.5rem;
+    font-family: 'JetBrains Mono';
+    font-size: 1.3rem;
     line-height: 2rem;
     text-align: left;
 }
@@ -454,9 +459,10 @@ h3 {
 }
 
 .project_title_desc {
+    font-family: 'JetBrains Mono';
+    font-size: 1.2rem;
     margin-top: .5rem;
     margin-bottom: 2.5rem;
-    font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
     color: #6c757d;
@@ -527,6 +533,8 @@ h2 {
 }
 
 .projects__row_content {
+    font-family: 'JetBrains Mono';
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
@@ -545,7 +553,6 @@ h2 {
 
 .projects__row-content_desc{
     text-align: left;
-    font-size: 1.3rem;
 }
 
 .btn--med{
@@ -631,8 +638,8 @@ h2 {
     margin-inline-start: 2.5rem;
 }
 .cont_text {
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-family: 'JetBrains Mono';
+    font-size: 1.3rem;
     letter-spacing: -.025em;
     font-weight: 600;
     text-align: left;
