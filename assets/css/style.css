@@ -16,7 +16,7 @@ html {
     min-height: 85vh;
     width: 100%;
     background-color: #59a4ce4f;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/banner.jpg"); */
+    background-image: linear-gradient(#258cc700, #59a4ce), url(/assets/img/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
