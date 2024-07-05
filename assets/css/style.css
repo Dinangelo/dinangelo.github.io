@@ -19,6 +19,7 @@ html {
     background-image: linear-gradient(#258cc700, #59a4ce), url(/assets/img/banner.jpg);
     background-position: center;
     background-size: cover;
+    clip-path: ellipse(177% 100% at 14.44% 0%);
     position: relative;
     
 }
@@ -313,6 +314,7 @@ h3 {
     margin-right: auto;
     background-color: #59a4ce0f;
     padding-top: 5rem;
+    border-radius: 0.5rem;
 }
 
 .compet-title {
@@ -397,6 +399,12 @@ h3 {
 .container_row {
     display: flex;
     align-items: center;
+    transition:transform .4s;
+}
+
+.container_row:hover {
+    cursor: pointer;
+    transform: scale(1.08);
 }
 
 .container_row img {
@@ -582,7 +590,8 @@ h2 {
 
 .project_to_know{
     display: flex;
-    column-gap: 1.5rem; 
+    flex-wrap: wrap;
+    gap: 6px;
     margin-top: 1.25rem;
     margin-inline-start: 1.25rem;
     margin-bottom: 1.25rem;
@@ -614,7 +623,7 @@ h2 {
 .cta {
     margin-top: 5%;
     width: 100%;
-    background-color: #59a4ce4f;
+    background-color: #e6ebec;
     background-position: center;
     background-size: cover;
     padding: 100px 0;
@@ -664,6 +673,11 @@ h2 {
     font-weight: 600;
     text-align: left;
     color: #666;
+}
+
+.cont_text a {
+    color: #666;
+    text-decoration: none;
 }
 
 @media(max-width :700px) {
